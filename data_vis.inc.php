@@ -90,7 +90,7 @@ function data_vis_component_addmenu($arg=null){
 	//retrieve the URL for this component
 	$urlbase=get_component_url_base($data_vis_component_name);
 	//figure out where I'm going on the menu	
-	$mi=find_menu_item(MENU_HOME,"menu-home-acknowledgements","id");
+	$mi=find_menu_item(MENU_HOME,"menu-home-all-host-graphs","id");
 	if($mi==null) //bail if I didn't find the above menu item 
 		return;
 		
@@ -103,7 +103,7 @@ function data_vis_component_addmenu($arg=null){
 	//add this to the main home menu 
 	add_menu_item(MENU_HOME,array(
 		"type" => "link",
-		"title" => gettext("Hello World"),
+		"title" => gettext("Data Visualization"),
 		"id" => "menu-home-data_vis",
 		"order" => $neworder,
 		"opts" => array(
