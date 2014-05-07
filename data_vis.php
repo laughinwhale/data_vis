@@ -1,8 +1,8 @@
 <?php  //data_vis.php 
 //
-// Hello World
+// Data Vis
 //
-// Copyright (c) 2011 Nagios Enterprises, LLC.  All rights reserved.
+// Copyright (c) 2014 Nagios Enterprises, LLC.  All rights reserved.
 //  
 // 
 
@@ -31,12 +31,9 @@ check_authentication(false);
 		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 		
 <?php		do_page_head_links();  ?>
-		<style type='text/css'>
-		
-		</style>
-		<script type="text/javascript">
-		src="/usr/local/nagiosxi/html/includes/js/jquery/jquery-1.8.2.min.js"></script>
-		
+		<script src="/includes/js/highcharts/highcharts.js"></script>
+		<script src="/includes/js/jquery/jquery-1.8.2.min.js"></script>
+		<script src="/includes/js/bootstrap.min.js"></script>
 		<style>
 		body {background:url("background.jpg") no-repeat center center fixed; background-size: cover;}
 		</style>

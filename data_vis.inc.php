@@ -8,6 +8,7 @@
 //include the helper file
 require_once(dirname(__FILE__).'/../componenthelper.inc.php');
 
+
 /**
 *	BEWARE, EVERYTHING YOU DO IN THIS FILE IS IN THE GLOBAL SCOPE OF XI. 
 *	Syntax errors here will break most pages in XI. 
@@ -246,6 +247,6 @@ function data_vis_component_addtab($cbtype,&$cbdata){
 	// add new tab
 	$cbdata["tabs"][]=$newtab;
 }
-	
+
 //don't put a closing tag in this filee
 //ESPECIALLY don't put closing tags + line breaks, you'll break stuff 
