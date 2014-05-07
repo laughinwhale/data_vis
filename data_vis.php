@@ -99,45 +99,6 @@ function submit_stuff() {
 	
 } 
 
-function show_default($args = array()) {
-	
-	//declare globals
-	global $cfg; 
-	
-	//process input variables
-	$var = grab_request_var('var',false); 
-	
-	//process input array
-	$error = grab_array_var($args,'error',false); 
-	$msg = grab_array_var($args,'msg',''); 
-	
-	//declare function variables
-	$html=''; 
-	$feedback=''; 
-	
-	//used for diplay_message() box 
-	$info = false; //green or blue??
-	$returnstring = true;  //return the string, or print it?
-	
-	//if something was actually submitted, show feedback
-	if($var)
-		$feedback = display_message($error,$info,$msg,$returnstring); 
-			
-	//do function stuff -> build the html output string 
-	$html.="<h1>Data Vis Header</h1>
-			{$feedback}
-			<br /><br />
-			<div><a href='data_vis.php?cmd=submitstuff&var=good' title='default' >Submit Good Stuff</a></div>
-			<div><a href='data_vis.php?cmd=submitstuff&var=bad' title='default' >Submit Bad Stuff</a></div>
-			";  
-			
-				
-	print $html;
-	
-	//dumping the array so all can see
-	array_dump($args); 
-	
-} 
 
 
 
