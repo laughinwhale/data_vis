@@ -60,20 +60,6 @@ function route_request() {
 	$cmd = grab_request_var('cmd','default'); 
 	$args = array(); 
 	
-	switch($cmd) {
-	
-		case 'submitstuff':
-			//this function handles a form submission and returns data for the default display
-			$args = submit_stuff();
-			//now we can show the default page with some user feedback
-			show_default($args); 
-		break; 
-		
-		default:
-			show_default($args); 
-		break; 
-	
-	}
 
 }
 
